@@ -1,0 +1,138 @@
+/* global styles */
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+    margin: 0%  ;
+}
+body{
+    background-color: #f6f6f6;
+
+}
+html{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+a{
+    color: #3c8453  ;
+}
+a:hover{
+    color: red;
+}
+h1,h2,h3{
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+    font-weight: 300;
+}
+h2{
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 2px;
+}
+h1{
+    font-weight: 650;
+    font-size: 40px;
+}
+h3{
+    margin-bottom: 5px;
+}
+/*index */
+
+.home {
+    background: url(images/Wallpaper3.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+
+    height: 100%; 
+}
+
+.home .content-wrapper{
+    margin: 0 auto;
+    max-width: 900px;
+    
+    padding: 30px;
+    flex: 1 0 auto;
+    
+}
+.home .content-bg{
+    padding: 15px;
+    background: rgba(255,255,255,0.9);
+}
+
+.btn{
+    background-color: #3c8453;
+    color: #f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* Resume */
+.resume header::before{
+    background: url(images/Wallpaper3.avif) center/cover;
+    content:"";
+    display: block;
+    height: 450px;
+    margin-bottom: 10px;
+    
+}
+.content-wrapper{
+    margin: 50px auto;
+    max-width: 900px;
+}
+.resume-section h2{
+    border-bottom: 2px dashed #d3d4d6;
+    margin-bottom: 10px;
+}
+.resume-section{
+    margin-bottom: 50px;
+}
+.download-link{
+    position: fixed;
+    padding:3px ;
+    margin: 2px;
+}
+.space{
+    margin: 25px;
+    margin-left: 0;
+}
+
+/* FOOTER */
+footer{
+    background-color: #222;
+    color: #d3d4d6;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+    
+}
+footer a{
+    color: #bcaa96;
+}
+footer a:hover{
+    color: #3c8453;
+}
+footer img:hover{
+    opacity: 0.5;
+}
+.socials{
+    list-style-type: none;
+    padding: 0%;
+}
+.socials img{
+    width: 25px;
+}
+
+.socials li{
+    display: inline-block;
+    margin-left: 5px;
+}
+@media(max-width:1200px){
+    .download-link{
+        position: absolute;
+    }
+}
